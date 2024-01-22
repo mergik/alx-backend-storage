@@ -17,7 +17,8 @@ def stats():
         print(f"\tmethod {method}: " +
               f"{collection.count_documents({'method': method})}")
 
-    print(f"{collection.count_documents({'method': 'GET', 'path': '/status'})} \
+    print(
+        f"{collection.count_documents({'method': 'GET', 'path': '/status'})} \
 status check")
 
     print("IPS:")
